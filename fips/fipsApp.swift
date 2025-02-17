@@ -25,7 +25,9 @@ struct fipsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView {
+                HomeView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }

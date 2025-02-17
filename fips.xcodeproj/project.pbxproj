@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D8D9DC812D46E71900E63E50 /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = D8D9DC802D46E71900E63E50 /* LLM */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D8D9DC3B2D46D32600E63E50 /* fips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D9DC812D46E71900E63E50 /* LLM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = fips;
 			packageProductDependencies = (
+				D8D9DC802D46E71900E63E50 /* LLM */,
 			);
 			productName = fips;
 			productReference = D8D9DC3B2D46D32600E63E50 /* fips.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = D8D9DC322D46D32600E63E50;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D8D9DC7F2D46E71900E63E50 /* XCRemoteSwiftPackageReference "LLM" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8D9DC3C2D46D32600E63E50 /* Products */;
 			projectDirPath = "";
@@ -255,6 +264,10 @@
 				DEVELOPMENT_TEAM = CTXKZ88277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I wanna use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I wanna use additional photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I wanna use photos";
+				INFOPLIST_KEY_NSSystemAdministrationUsageDescription = "I wanna sysadmin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -267,9 +280,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.jasontan.fips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -284,6 +301,10 @@
 				DEVELOPMENT_TEAM = CTXKZ88277;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I wanna use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "I wanna use additional photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I wanna use photos";
+				INFOPLIST_KEY_NSSystemAdministrationUsageDescription = "I wanna sysadmin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,9 +317,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = name.jasontan.fips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -324,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8D9DC7F2D46E71900E63E50 /* XCRemoteSwiftPackageReference "LLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eastriverlee/LLM.swift/";
+			requirement = {
+				branch = pinned;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8D9DC802D46E71900E63E50 /* LLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8D9DC7F2D46E71900E63E50 /* XCRemoteSwiftPackageReference "LLM" */;
+			productName = LLM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8D9DC332D46D32600E63E50 /* Project object */;
 }

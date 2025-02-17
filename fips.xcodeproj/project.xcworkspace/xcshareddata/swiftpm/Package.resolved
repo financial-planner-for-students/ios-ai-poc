@@ -1,0 +1,23 @@
+{
+  "originHash" : "92bd072ec673fe31e11ca35d196921c06d5b239f46cbdec58bfea65b6337d030",
+  "pins" : [
+    {
+      "identity" : "llama.cpp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ggerganov/llama.cpp/",
+      "state" : {
+        "revision" : "cda0e4b648dde8fac162b3430b14a99597d3d74f"
+      }
+    },
+    {
+      "identity" : "llm.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eastriverlee/LLM.swift/",
+      "state" : {
+        "branch" : "pinned",
+        "revision" : "48546489c46c8d116a320ad6bc031bbd714fd8c0"
+      }
+    }
+  ],
+  "version" : 3
+}
