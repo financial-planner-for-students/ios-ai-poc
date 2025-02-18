@@ -3,6 +3,10 @@ This proof of concept was aimed towards achieving the following technical feasab
 - Ability to utilize Apples Vision Framework to scan and read images/pdfs/receipts for data extraction (OCR) ✔️
 - Ability to self-host an LLM on a users iPhone and utilize it's potential ✔️
 
+## How we accomplished this
+- **Receipt Scanning - Apple Vision Framework**
+- **Local LLM on iOS devices - LLM.Swift (Swift bindings for llama.cpp)**
+
 ### Video
 https://github.com/user-attachments/assets/b3f5f58e-6cc1-4f8a-8819-a931cf1fbef1
 
